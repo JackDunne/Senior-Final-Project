@@ -12,7 +12,9 @@ function getString(){
         let passesAllChecks = true;
 
         //Conditional Statements here.
-
+        if(inRange() === false){
+          passesAllChecks = false;
+        }
 
         if(!passesAllChecks){
             console.log("\nTry again\n");
