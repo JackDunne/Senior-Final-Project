@@ -48,9 +48,8 @@ exports.containsUpper =function(str){
     throw new Error("does not have uppercase character");
     }
   }
-
 catch(e){
-  console.log(e.name+": "e.message);
+  console.log(e.name+": "+e.message);
   return hasUpper;
   }
 }
@@ -64,11 +63,11 @@ exports.containsLower =function(str){
       }
     }
     if(hasLower === false){
-      throw new  Error("does not have lowercase letter");
+      throw new Error("does not have lowercase letter");
     }
   }
   catch(e){
-    console.log(e.name+": "e.message);
+    console.log(e.name+": "+e.message);
     return hasLower;
   }
 }
@@ -84,11 +83,11 @@ exports.containsNumerical =function(str){
       }
     }
     if(hasNumber === false){
-      throw new  Error("does not have Number");
+      throw new Error("does not have Number");
     }
   }
   catch(e){
-    console.log(e.name+": "e.message);
+    console.log(e.name+": "+e.message);
     return hasNumber;
   }
 }
@@ -106,12 +105,12 @@ exports.containsSpecial =function(str){
         }
       }
     }
-  }
     if(hasSpecial === false){
-      throw new  Error("does not have special character");
+      throw new Error("does not have special character");
+      }
     }
   catch(e){
-    console.log(e.name+": "e.message);
+    console.log(e.name+": "+e.message);
     return hasSpecial;
   }
 }
